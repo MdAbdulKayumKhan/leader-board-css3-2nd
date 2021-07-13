@@ -1,22 +1,62 @@
 
 body{
+    margin: 0; padding: 0;
     background-color: #F3F1FF;
 }
+header{
+    width: 100%;
+    height: 94px;
+    background-color: #562EFF;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+    margin-right: 15px;
+}
+.logo h3{
+    font-size: 24px;
+    color: white;
+}
+.nav-items ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.nav-items ul li a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-weight: 500;
+}
+
 main{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 /* player style section start */
 .container{
     padding: 30px;
+    width: 60%;
+    margin-top: 21px;
     background-color: #FFFFFF;
+    border-radius: 2%;
 }
 .top-player{
     position: relative;
     overflow: hidden;
 }
-.top-player h1{
+.section-title {
     margin-top: 3px;
     color: #562EFF;
     font-size: 24px;
@@ -41,11 +81,77 @@ main{
 
 }
 .player img:hover{
-    transform: scale(.90) rotate(360deg);
+    transform: scale(0.80);
     transition: transform 2s;
 }
 
 hr{
     border: 1px solid #D1D1D1;
     margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* blogs styles start  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 26px;
+    grid-column-gap: 80px;
+}
+.blog{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+.blog-thumble img{
+    width: 260px;
+    height: 170px;
+    border-radius: 12%;
+    
+}
+.blog-thumble img:hover{
+    transition: transform 2s;
+    transform: scale(0.90) skewX(2deg) rotate(10deg);
+}
+.blog-info{
+    margin-left: 20px;
+}
+.blog-info a{
+    text-decoration: none;
+}
+
+/* courses styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+}
+.course{
+    border: 1px solid whitesmoke;
+    padding: 20px;
+    border-radius: 5%;
+}
+.course-intro img{
+    width: 224px;
+}
+.course-intro p{
+    color: #ED6B4F;
+}
+.course-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-star{
+    color: #FFC014;
+}
+.fa-star.last{
+    color: #AEAEAE;
+}
+.course-duration{
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    padding: 5px 10px;
+    border-radius: 25px;
 }
