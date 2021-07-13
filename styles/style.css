@@ -208,3 +208,25 @@ Media Quaries start
     
     
 }
+
+@media only screen and (min-width: 689px) and (max-width: 992px) {
+    
+    .container{
+        width: 80%;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* .top-player, .top-blogs, .lates-course{
+        display: none;
+    } */
+     
+
+}
