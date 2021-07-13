@@ -4,6 +4,7 @@ body{
     background-color: #F3F1FF;
 }
 header{
+    /* width:1820px; */
     width: 100%;
     height: 94px;
     background-color: #562EFF;
@@ -154,4 +155,56 @@ hr{
     background-color: #FFE4E8;
     padding: 5px 10px;
     border-radius: 25px;
+}
+
+/* --------------------
+Media Quaries start
+--------------------- */
+@media only screen and (max-width:688px) {
+    
+    header{
+        height: 225px;
+        width: 100%;
+    }
+    .logo{
+        justify-content: center;
+    }
+    .navbar{
+        flex-direction: column
+    }
+    .nav-items{
+        justify-content:space-evenly;
+    }
+    .nav-items ul li a{
+        margin-left: 25px;
+        font-size: 23px;
+    }
+    .container{
+        width: 80%;
+    }
+    
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player{
+        flex-direction: column;
+        padding: 10px;
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog{
+        flex-direction: column;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .course{
+        margin-left: 16%;
+    }
+    
+    
 }
